@@ -1,12 +1,12 @@
 from typing import Counter
 
 
-nome = input()
-estado_civil = input()
+nome = input('Insira seu nome: ').strip()
+estado_civil = input('Qual seu estado civil? 1 - Casado 2 - Solteiro').strip()
 num_carac= len(nome)
 
 if estado_civil == '1':
-    nome_conjuge = input()
+    nome_conjuge = input('Qual o nome do cônjuge? ').strip()
     num_carac2 = len(nome_conjuge)
     resultado = num_carac + num_carac2
     print(resultado)
